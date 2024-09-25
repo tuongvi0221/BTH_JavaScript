@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    margin: 20px auto;
+    width: 300px;
+   
+}
+
+.profile-img {
+    width: 100%; /* Ảnh chiếm 100% chiều rộng khung div */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+  
+}
+
+#hovaten {
+    text-align-last: left;
+    top: -200px;
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+    padding: 10px;
+}
+
+/* Đồng bộ màu icon */
+#nghenghiep, #diachi, #email, #sdt {
+    color: #7e857e;  
+    margin-top: 10px;
+    font-size: 16px;
+    text-align-last: left;
+}
+
+h3{
+    text-align-last: left;
+    color: #7e857e;  
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.skill-item {
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex; /* Sử dụng flexbox để căn chỉnh tốt hơn */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.progress-bar {
+    flex-grow: 1; /* Cho phép thanh tiến trình mở rộng */
+    background-color: #ebebeb; /* Màu nền cho thanh tiến trình */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    height: 20px; /* Độ cao của thanh */
+    position: relative; /* Để đặt phần trăm vào vị trí chính xác */
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+/* Lớp cho các icon */
+.icon, #nghenghiep, #diachi, #email, #sdt {
+    color:#7e857e; /* Màu xanh lá cây đồng bộ */
+    font-size: 20px; /* Kích thước icon, có thể thay đổi tùy ý */
+
+}
+
+
+
+.div_shadow{
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Nền trắng với độ trong suốt */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    padding: 20px; /* Thêm khoảng cách giữa nội dung và viền */
+}

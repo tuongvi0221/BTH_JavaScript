@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Đăng ký CV</title>
+    <link rel="stylesheet" href="dangKyCV.css" type="text/css">
+    <script src="dangKyCV.js" defer></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Đăng ký CV</th>
+        </tr>
+        <tr>
+            <td><label>Họ và tên</label></td>
+            <td><input type="text" name="hovaten" id="hovaten" placeholder="Nguyễn Văn C"></td>
+        </tr>
+        <tr>
+            <td><label>Địa chỉ</label></td>
+            <td><input type="text" name="diachi" id="diachi" placeholder="TP.HCM"></td>
+        </tr>
+        <tr>
+            <td><label>Điện thoại</label></td>
+            <td><input type="text" name="dienthoai" id="dienthoai" placeholder="0900000000"></td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="text" name="email" id="email" placeholder="ex@mail.com"></td>
+        </tr>
+        <tr>
+            <td><label>Nghề nghiệp</label></td>
+            <td><input type="text" name="nghenghiep" id="nghenghiep" placeholder="Designer"></td>
+        </tr>
+        <tr>
+            <td><label>Ảnh đại diện</label></td>
+            <td>
+                <input type="file" name="btnanh" id="btnanh" accept="image/*" onchange="loadImage(event)">
+                <br>
+                <img id="previewImg" src="#" alt="Chưa chọn ảnh" style="display:none; width:150px; height:auto; margin-top:10px;">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2"><label>Kỹ năng</label></td>
+            <td>
+                <table id="kyNangTable">
+                    <tr>
+                        <th>Tên kỹ năng</th>
+                        <td>
+                            <input type="text" name="kynang" id="kynang" placeholder="Node JS">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Mức độ</th>
+                        <td>
+                            <input type="range" id="myRange" min="0" max="100" step="10" value="50">
+                            <span id="rangeValue">50%</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="text">
+                <span onclick="themKyNang()">Thêm</span>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input class="btn" type="button" name="btndangky" value="Đăng ký" onclick="inprofile()">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
